@@ -1,127 +1,79 @@
-# Project 3: Applying SQL Filters for Security Investigations
+# Project 3: SQL Filtering for Security Investigations
 
 ## Project Overview
-As a security professional, I used SQL queries to investigate potential security issues by analyzing login attempts and employee device data.  
+As part of investigating potential security incidents and preparing for device updates, I queried two main tables:  
+- `log_in_attempts` — to analyze suspicious login behavior  
+- `employees` — to identify machines needing security patches  
 
-This involved filtering large datasets from two tables — `log_in_attempts` and `employees` — to:
-- Identify suspicious after-hours login failures
-- Examine activity on specific dates
-- Detect logins from unusual locations
-- Target employee machines for security updates by department and location
+I used SQL filters (AND, OR, NOT, LIKE with wildcards) to extract only the relevant records quickly and accurately.
 
-Core SQL techniques demonstrated:
-- Logical operators: **AND**, **OR**, **NOT**
-- Pattern matching: **LIKE** with `%` wildcard
-- Filtering by time, date, and categorical values
+All examples below show real terminal executions — query + result — captured from the lab environment.
 
-These skills are valuable for log analysis, threat detection, incident investigation, and asset management in cybersecurity.
+## Investigated Security Scenarios
 
-## Key SQL Queries & Explanations
+### 1. After-Hours Failed Login Attempts
+**Goal**: Identify failed login attempts that happened after business hours (> 18:00) for incident review.
 
-### 1. Retrieve After-Hours Failed Login Attempts
-**Goal**: Find all failed login attempts that occurred after business hours (after 18:00) for further investigation.
+![After-hours failed login attempts](images/after-hours-failed-logins.png)
 
-```sql
-SELECT *
-FROM log_in_attempts
-WHERE login_time > '18:00'
-  AND success = FALSE;
-```
+**Brief explanation**:  
+Filtered login attempts by time of day (> 18:00) and success status (failed only). This helps detect possible off-hours brute-force or credential-stuffing attempts.
 
-**Explanation**:  
-Selected all columns from the `log_in_attempts` table. Used **AND** to combine two conditions:  
-- `login_time > '18:00'` → after business hours  
-- `success = FALSE` → failed login attempts
+### 2. Login Attempts on Suspicious Dates
+**Goal**: Check all login activity on 2022-05-09 and the previous day (2022-05-08).
 
 <!-- INSERT YOUR SCREENSHOT HERE -->
-<!-- Example: ![After-hours failed logins](images/after-hours-failed.png) -->
-<!-- Upload your terminal screenshot showing both the query and some output -->
+![Login attempts on specific dates](images/specific-dates-logins.png)
 
-### 2. Retrieve Login Attempts on Specific Dates
-**Goal**: Investigate login activity on 2022-05-09 and the day before (2022-05-08).
+**Brief explanation**:  
+Targeted logins on and around a known suspicious date to look for unusual patterns or volume.
 
-```sql
-SELECT *
-FROM log_in_attempts
-WHERE login_date = '2022-05-09'
-   OR login_date = '2022-05-08';
-```
-
-**Explanation**:  
-Used **OR** to return records from either of the two specified dates.
+### 3. Login Attempts Outside of Mexico
+**Goal**: Find login attempts coming from locations other than Mexico.
 
 <!-- INSERT YOUR SCREENSHOT HERE -->
-<!-- Example: ![Specific dates logins](images/specific-dates.png) -->
+![Logins outside Mexico](images/logins-outside-mexico.png)
 
-### 3. Retrieve Login Attempts Outside of Mexico
-**Goal**: Identify potentially suspicious login attempts not originating from Mexico (handles both 'MEX' and 'MEXICO').
+**Brief explanation**:  
+Used pattern matching to exclude Mexico (covering both 'MEX' and 'MEXICO' values). Useful for spotting potentially unauthorized geographic access.
 
-```sql
-SELECT *
-FROM log_in_attempts
-WHERE country NOT LIKE 'MEX%';
-```
-
-**Explanation**:  
-Used **NOT** combined with **LIKE** and the `%` wildcard to exclude any country value starting with 'MEX'.
+### 4. Employees in Marketing – East Building
+**Goal**: List employee devices in the Marketing department located in the East building for targeted patching.
 
 <!-- INSERT YOUR SCREENSHOT HERE -->
-<!-- Example: ![Logins outside Mexico](images/outside-mexico.png) -->
+![Marketing department - East building](images/marketing-east-building.png)
 
-### 4. Retrieve Employees in Marketing (East Building)
-**Goal**: Get list of employee machines in the Marketing department located in the East building for targeted updates.
+**Brief explanation**:  
+Combined exact department filter with location pattern matching to narrow down the list of machines.
 
-```sql
-SELECT *
-FROM employees
-WHERE department = 'Marketing'
-  AND office LIKE 'East%';
-```
-
-**Explanation**:  
-**AND** combines exact department match with pattern matching for office location.
+### 5. Employees in Finance or Sales
+**Goal**: Identify devices in Finance and Sales departments (different update needed).
 
 <!-- INSERT YOUR SCREENSHOT HERE -->
-<!-- Example: ![Marketing East building](images/marketing-east.png) -->
+![Finance or Sales departments](images/finance-or-sales.png)
 
-### 5. Retrieve Employees in Finance or Sales
-**Goal**: Identify employees in Finance or Sales departments (different update required).
+**Brief explanation**:  
+Captured employees from either department to support department-specific security actions.
 
-```sql
-SELECT *
-FROM employees
-WHERE department = 'Finance'
-   OR department = 'Sales';
-```
-
-**Explanation**:  
-**OR** captures employees from either department.
+### 6. All Employees Not in IT
+**Goal**: Find all employee machines except those in IT (already patched).
 
 <!-- INSERT YOUR SCREENSHOT HERE -->
-<!-- Example: ![Finance or Sales](images/finance-sales.png) -->
+![Employees not in IT](images/not-in-it.png)
 
-### 6. Retrieve All Employees Not in IT
-**Goal**: Target employees outside the Information Technology department for security updates.
+**Brief explanation**:  
+Excluded the IT department to focus patching efforts on the rest of the organization.
 
-```sql
-SELECT *
-FROM employees
-WHERE department NOT LIKE 'Information Technology';
-```
+## Summary
+Through these targeted queries I was able to:
+- Quickly surface suspicious login patterns for investigation
+- Efficiently identify groups of employee devices needing security updates
 
-**Explanation**:  
-**NOT** excludes the IT department.
+**Main skills demonstrated**:
+- Practical application of SQL filtering in security contexts
+- Using logical operators (AND/OR/NOT) and pattern matching (LIKE)
+- Reading and interpreting real database output in terminal
 
-<!-- INSERT YOUR SCREENSHOT HERE -->
-<!-- Example: ![Not in IT](images/not-in-it.png) -->
+These techniques are directly useful in SOC analyst, threat hunting, and log analysis roles.
 
-## Summary & Skills Demonstrated
-I used SQL filters to extract actionable security insights from login and employee data. This included identifying suspicious patterns, investigating specific events, and preparing targeted device updates.
-
-**Key skills gained**:
-- Writing precise, efficient SQL queries for security use cases
-- Combining multiple conditions with AND/OR/NOT
-- Using LIKE and wildcards for flexible pattern matching
-- Translating business/security needs into database queries
-
-These abilities are directly applicable to SIEM log analysis, threat hunting, and managing security posture in real-world environments.
+Questions / feedback welcome!
