@@ -17,9 +17,7 @@ All actions were performed using Linux terminal commands — real command execut
 ### 1. Check File and Directory Details
 **Goal**: List all files, hidden files, and their current permissions in the `projects` directory.
 
-<!-- INSERT YOUR SCREENSHOT HERE -->
-<!-- Recommended: Full terminal showing `ls -la` command + complete output -->
-![Check permissions - ls -la projects directory](images/ls-la-projects.png)
+![Check permissions - ls -la projects directory](images/Picture1.png)
 
 **Brief explanation**:  
 Used `ls -la` to display detailed listing including hidden files (starting with `.`).  
@@ -43,7 +41,7 @@ This format helps quickly determine who can read, modify, or execute files/direc
 
 <!-- INSERT YOUR SCREENSHOT HERE -->
 <!-- Show `chmod` command + follow-up `ls -la` to verify change -->
-![Remove write for others - project_k.txt](images/chmod-project-k.png)
+![Remove write for others - project_k.txt](images/Picture2.png)
 
 **Brief explanation**:  
 Used `chmod o-w project_k.txt` to remove write permission from others, then verified with `ls -la`.
@@ -53,7 +51,7 @@ Used `chmod o-w project_k.txt` to remove write permission from others, then veri
 
 <!-- INSERT YOUR SCREENSHOT HERE -->
 <!-- Show combined chmod command + verification -->
-![Secure hidden file .project_x.txt](images/chmod-hidden-project-x.png)
+![Secure hidden file .project_x.txt](images/Picture3.png)
 
 **Brief explanation**:  
 Used symbolic mode:  
@@ -66,7 +64,7 @@ Then confirmed updated permissions.
 
 <!-- INSERT YOUR SCREENSHOT HERE -->
 <!-- Show chmod command + final ls -la verification -->
-![Restrict drafts directory access](images/chmod-drafts-directory.png)
+![Restrict drafts directory access](images/PIcture4.png)
 
 **Brief explanation**:  
 Used `chmod go-x drafts` to remove execute permission from group and others (removing traverse/enter ability).  
