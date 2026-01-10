@@ -64,7 +64,7 @@ Then confirmed updated permissions.
 
 <!-- INSERT YOUR SCREENSHOT HERE -->
 <!-- Show chmod command + final ls -la verification -->
-![Restrict drafts directory access](images/PIcture4.png)
+![Restrict drafts directory access](images/Picture4.png)
 
 **Brief explanation**:  
 Used `chmod go-x drafts` to remove execute permission from group and others (removing traverse/enter ability).  
