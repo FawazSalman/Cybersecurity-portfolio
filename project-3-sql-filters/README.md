@@ -14,7 +14,7 @@ All examples below show real terminal executions — query + result — captured
 ### 1. After-Hours Failed Login Attempts
 **Goal**: Identify failed login attempts that happened after business hours (> 18:00) for incident review.
 
-![After-hours failed login attempts](images/after-hours-failed-logins.png)
+![After-hours failed login attempts](images/Picture1.png)
 
 **Brief explanation**:  
 Filtered login attempts by time of day (> 18:00) and success status (failed only). This helps detect possible off-hours brute-force or credential-stuffing attempts.
@@ -23,7 +23,7 @@ Filtered login attempts by time of day (> 18:00) and success status (failed only
 **Goal**: Check all login activity on 2022-05-09 and the previous day (2022-05-08).
 
 <!-- INSERT YOUR SCREENSHOT HERE -->
-![Login attempts on specific dates](images/specific-dates-logins.png)
+![Login attempts on specific dates](images/Picture2.png)
 
 **Brief explanation**:  
 Targeted logins on and around a known suspicious date to look for unusual patterns or volume.
@@ -32,7 +32,7 @@ Targeted logins on and around a known suspicious date to look for unusual patter
 **Goal**: Find login attempts coming from locations other than Mexico.
 
 <!-- INSERT YOUR SCREENSHOT HERE -->
-![Logins outside Mexico](images/logins-outside-mexico.png)
+![Logins outside Mexico](images/Picture3.png)
 
 **Brief explanation**:  
 Used pattern matching to exclude Mexico (covering both 'MEX' and 'MEXICO' values). Useful for spotting potentially unauthorized geographic access.
@@ -41,7 +41,7 @@ Used pattern matching to exclude Mexico (covering both 'MEX' and 'MEXICO' values
 **Goal**: List employee devices in the Marketing department located in the East building for targeted patching.
 
 <!-- INSERT YOUR SCREENSHOT HERE -->
-![Marketing department - East building](images/marketing-east-building.png)
+![Marketing department - East building](images/Picture4.png)
 
 **Brief explanation**:  
 Combined exact department filter with location pattern matching to narrow down the list of machines.
@@ -50,7 +50,7 @@ Combined exact department filter with location pattern matching to narrow down t
 **Goal**: Identify devices in Finance and Sales departments (different update needed).
 
 <!-- INSERT YOUR SCREENSHOT HERE -->
-![Finance or Sales departments](images/finance-or-sales.png)
+![Finance or Sales departments](images/Picture5.png)
 
 **Brief explanation**:  
 Captured employees from either department to support department-specific security actions.
@@ -59,7 +59,7 @@ Captured employees from either department to support department-specific securit
 **Goal**: Find all employee machines except those in IT (already patched).
 
 <!-- INSERT YOUR SCREENSHOT HERE -->
-![Employees not in IT](images/not-in-it.png)
+![Employees not in IT](images/Picture6.png)
 
 **Brief explanation**:  
 Excluded the IT department to focus patching efforts on the rest of the organization.
