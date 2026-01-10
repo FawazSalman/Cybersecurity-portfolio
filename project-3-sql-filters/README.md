@@ -1,4 +1,3 @@
-```markdown
 # Project 4: Applying SQL Filters for Security Investigations
 
 ## Project Overview
