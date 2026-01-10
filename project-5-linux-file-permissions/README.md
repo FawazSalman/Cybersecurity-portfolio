@@ -1,4 +1,4 @@
-# Project 5: Managing File Permissions in Linux
+# Project 4: Managing File Permissions in Linux
 
 ## Project Overview
 As a security professional supporting a research team, I reviewed and updated file and directory permissions in the `/home/researcher2/projects` directory to ensure proper authorization and enhance system security.  
