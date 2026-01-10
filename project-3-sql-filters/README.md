@@ -1,4 +1,4 @@
-# Project 4: Applying SQL Filters for Security Investigations
+# Project 3: Applying SQL Filters for Security Investigations
 
 ## Project Overview
 As a security professional, I used SQL queries to investigate potential security issues by analyzing login attempts and employee device data.  
