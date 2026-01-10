@@ -14,7 +14,8 @@ Hello! I'm Fawaz, a cybersecurity enthusiast completing the Google Cybersecurity
 Here are the portfolio activities from the Google Cybersecurity courses. Each link leads to a detailed report on what I did, challenges faced, skills applied, and key learnings.
 
 - [Project 1: Asset Inventory Management](./project-1-asset-inventory/README.md) (Course 2: Assets, Threats, and Vulnerabilities)
-- [Project 2: Network Traffic Analysis](./project-2-network-traffic/README.md) (Course 3: Networks and Protocols)
+  - [Project 2: NIST CSF Incident Response](./project-2-nist-incident-response/README.md)  
+  *(Course: Connect and Protect: Networks and Network Security)*
 - ... (Add more as you create them)
 
 ## Contact
