@@ -1,7 +1,3 @@
-Here is the **updated and clean Markdown version** for your **Project 4** (Portfolio Activity: Apply filters to SQL queries) — written in pure Markdown, ready to copy-paste into your GitHub `project-4-sql-filters/README.md` file.
-
-I've removed all image references and instead left clear **placeholders** where you can easily insert your own terminal screenshots later (just upload your images to an `images/` folder inside the project and replace the placeholder comments with real Markdown image links).
-
 ```markdown
 # Project 4: Applying SQL Filters for Security Investigations
 
