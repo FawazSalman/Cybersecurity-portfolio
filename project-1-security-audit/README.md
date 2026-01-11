@@ -1,93 +1,127 @@
-# Conduct a Security Audit
+# Internal Security Audit - Botium Toys
 
 ## Project Overview
-This portfolio activity is from the Google Cybersecurity Professional Certificate, specifically the course "Play It Safe: Manage Security Risks." The task involved conducting an internal security audit for a fictional company, Botium Toys, to assess their security posture, identify gaps in controls, and ensure compliance with standards like PCI DSS, GDPR, and SOC. Audits like this are crucial for monitoring threats, risks, and vulnerabilities that could impact business continuity and critical assets.
+This project focuses on conducting an internal security audit for a fictional company called **Botium Toys**, a small U.S.-based business selling toys both in-store and online. As the company grows internationally, especially in the E.U. market, its IT infrastructure faces increased security and compliance risks.
 
-The scenario describes Botium Toys as a small U.S.-based toy developer with a growing online presence. The IT manager initiates an audit using the NIST Cybersecurity Framework (CSF) to evaluate assets, risks, and compliance, focusing on securing infrastructure, mitigating threats, and adhering to regulations for payment processing and E.U. business.
+The goal of this audit was to review the company’s current security posture, identify gaps in controls and compliance, and recommend improvements using the **NIST Cybersecurity Framework (CSF)**.
 
-## Objectives
-- Review the provided scope, goals, and risk assessment report.
-- Evaluate controls across administrative, technical, and physical categories.
-- Complete a controls and compliance checklist to identify implementation gaps.
-- Provide recommendations to improve security and reduce risks.
+This activity was completed as part of the **Google Cybersecurity Certificate**, with an emphasis on practical, real-world security auditing.
 
-## Approach
-1. **Reviewed Supporting Materials**:
-   - Botium Toys: Scope, goals, and risk assessment report – This outlined the audit scope (entire security program), goals (assess assets and controls), current assets (e.g., on-premises equipment, employee devices, networks, data storage), and risk assessment (inadequate asset management, lack of controls, high risk score of 8/10).
-   - Control Categories – This document categorized controls into administrative/managerial, technical, and physical/operational, with types like preventative, corrective, detective, and deterrent. It provided examples and purposes for each.
-   
-2. **Conducted the Audit**:
-   - Analyzed the risk assessment's "Additional comments" for specific issues (e.g., universal employee access to data, no encryption for credit cards, missing IDS, no disaster recovery plans).
-   - Filled out the Controls and Compliance Checklist by marking "Yes" or "No" for each control/best practice, with explanations based on the report.
-   - Focused on NIST CSF's "Identify" function to classify assets and assess impacts.
+---
 
-3. **Tools and Resources Used**:
-   - Google Docs/Word for reviewing and completing the checklist (based on provided templates).
-   - NIST CSF guidelines for structuring the audit.
-   - No specialized software; this was a document-based analysis emphasizing analytical skills.
+## Audit Scope and Goals
 
-## Key Findings
-The audit revealed significant gaps in Botium Toys' security controls and compliance. Below are the completed checklists reproduced as tables for clarity.
+**Scope:**  
+The audit covered Botium Toys’ entire security program, including:
+- IT-managed assets
+- Internal systems and networks
+- Security controls
+- Compliance with regulations such as PCI DSS and GDPR
 
-### Controls Assessment Checklist
+**Goals:**
+- Identify missing or weak security controls  
+- Assess compliance risks  
+- Reduce the likelihood of data breaches and regulatory fines  
+- Improve overall security posture
 
-| Yes | No | Control | Explanation |
-|-----|----|---------|-------------|
-|     | X  | Least Privilege | Currently, all employees have access to customer data; privileges need to be limited to reduce the risk of a breach. |
-|     | X  | Disaster recovery plans | There are no disaster recovery plans in place. These need to be implemented to ensure business continuity. |
-|     | X  | Password policies | Employee password requirements are minimal, which could allow a threat actor to more easily access secure data/other assets via employee work equipment/the internal network. |
-|     | X  | Separation of duties | Needs to be implemented to reduce the possibility of fraud/access to critical data, since the company CEO currently runs day-to-day operations and manages the payroll. |
-| X   |    | Firewall | The existing firewall blocks traffic based on an appropriately defined set of security rules. |
-|     | X  | Intrusion detection system (IDS) | The IT department needs an IDS in place to help identify possible intrusions by threat actors. |
-|     | X  | Backups | The IT department needs to have backups of critical data, in the case of a breach, to ensure business continuity. |
-| X   |    | Antivirus software | Antivirus software is installed and monitored regularly by the IT department. |
-|     | X  | Manual monitoring, maintenance, and intervention for legacy systems | The list of assets notes the use of legacy systems. The risk assessment indicates that these systems are monitored and maintained, but there is not a regular schedule in place for this task and procedures/policies related to intervention are unclear, which could place these systems at risk of a breach. |
-|     | X  | Encryption | Encryption is not currently used; implementing it would provide greater confidentiality of sensitive information. |
-|     | X  | Password management system | There is no password management system currently in place; implementing this control would improve IT department/other employee productivity in the case of password issues. |
-| X   |    | Locks (offices, storefront, warehouse) | The store’s physical location, which includes the company’s main offices, store front, and warehouse of products, has sufficient locks. |
-| X   |    | Closed-circuit television (CCTV) surveillance | CCTV is installed/functioning at the store’s physical location. |
-| X   |    | Fire detection/prevention (fire alarm, sprinkler system, etc.) | Botium Toys’ physical location has a functioning fire detection and prevention system. |
+---
 
-### Compliance Checklist
+## Assets Reviewed
+Some of the key assets assessed during the audit included:
+- Employee devices (laptops, desktops, smartphones)
+- Internal network and internet access
+- Databases storing customer and payment data
+- E-commerce and inventory systems
+- Legacy systems requiring manual monitoring
+- Physical location (office, storefront, warehouse)
 
-#### Payment Card Industry Data Security Standard (PCI DSS)
+---
 
-| Yes | No | Best Practice | Explanation |
-|-----|----|---------------|-------------|
-|     | X  | Only authorized users have access to customers’ credit card information. | Currently, all employees have access to the company’s internal data. |
-|     | X  | Credit card information is accepted, processed, transmitted, and stored internally, in a secure environment. | Credit card information is not encrypted and all employees currently have access to internal data, including customers’ credit card information. |
-|     | X  | Implement data encryption procedures to better secure credit card transaction touchpoints and data. | The company does not currently use encryption to better ensure the confidentiality of customers’ financial information. |
-|     | X  | Adopt secure password management policies. | Password policies are nominal and no password management system is currently in place. |
+## Key Findings (Risk Assessment Summary)
 
-#### General Data Protection Regulation (GDPR)
+The overall risk level was rated **high (8/10)** due to multiple gaps in security controls and compliance practices.
 
-| Yes | No | Best Practice | Explanation |
-|-----|----|---------------|-------------|
-|     | X  | E.U. customers’ data is kept private/secured. | The company does not currently use encryption to better ensure the confidentiality of customers’ financial information. |
-| X   |    | There is a plan in place to notify E.U. customers within 72 hours if their data is compromised/there is a breach. | There is a plan to notify E.U. customers within 72 hours of a data breach. |
-|     | X  | Ensure data is properly classified and inventoried. | Current assets have been inventoried/listed, but not classified. |
-| X   |    | Enforce privacy policies, procedures, and processes to properly document and maintain data. | Privacy policies, procedures, and processes have been developed and enforced among IT team members and other employees, as needed. |
+### Major issues identified:
+- All employees had access to sensitive customer and payment data
+- No encryption was used for stored or processed credit card information
+- No disaster recovery plans or data backups were in place
+- Weak password policies and no password management system
+- No intrusion detection system (IDS)
+- Legacy systems were monitored inconsistently
+- Compliance risks related to **PCI DSS**, **GDPR**, and **SOC controls**
 
-#### System and Organizations Controls (SOC type 1, SOC type 2)
+Some positive findings included:
+- Firewall rules were properly configured
+- Antivirus software was installed and monitored
+- Physical security (locks, CCTV, fire systems) was in place
+- GDPR breach notification procedures existed
 
-| Yes | No | Best Practice | Explanation |
-|-----|----|---------------|-------------|
-|     | X  | User access policies are established. | Controls of Least Privilege and separation of duties are not currently in place; all employees have access to internally stored data. |
-|     | X  | Sensitive data (PII/SPII) is confidential/private. | Encryption is not currently used to better ensure the confidentiality of PII/SPII. |
-| X   |    | Data integrity ensures the data is consistent, complete, accurate, and has been validated. | Data integrity is in place. |
-|     | X  | Data is available to individuals authorized to access it. | While data is available to all employees, authorization needs to be limited to only the individuals who need access to it to do their jobs. |
+---
+
+## Controls Assessment
+
+I evaluated administrative, technical, and physical controls to determine whether they were currently implemented.
+
+### Missing or Weak Controls:
+- Least Privilege
+- Separation of Duties
+- Strong Password Policies
+- Disaster Recovery Plans
+- Data Backups
+- Encryption
+- Intrusion Detection System (IDS)
+- Centralized Password Management
+- Formal legacy system maintenance schedule
+
+### Existing Controls:
+- Firewall
+- Antivirus software
+- Physical locks
+- CCTV surveillance
+- Fire detection and prevention systems
+
+---
+
+## Compliance Assessment
+
+### PCI DSS (Payment Card Industry Data Security Standard)
+- ❌ Unauthorized access to cardholder data
+- ❌ No encryption for payment data
+- ❌ Weak password practices
+
+### GDPR (General Data Protection Regulation)
+- ❌ Customer data not fully secured
+- ✅ 72-hour breach notification plan in place
+- ❌ Assets not properly classified
+
+### SOC Controls
+- ❌ User access policies not enforced
+- ❌ Sensitive data not confidential
+- ✅ Data integrity maintained
+- ❌ Data availability not restricted to authorized users
+
+---
 
 ## Recommendations
-To strengthen Botium Toys' security posture:
-- Implement Least Privilege and Separation of Duties to limit access and reduce insider threats.
-- Develop disaster recovery plans and regular backups for business continuity.
-- Enhance password policies and deploy a password management system.
-- Install an IDS for better threat detection.
-- Apply encryption for sensitive data (e.g., credit cards, PII).
-- Schedule regular maintenance for legacy systems and classify all assets.
-- These changes will address compliance gaps in PCI DSS, GDPR, and SOC, potentially reducing the risk score from 8/10 and avoiding fines.
 
-## Skills Gained and Learnings
-- **Skills**: Risk assessment, controls evaluation (administrative, technical, physical), compliance auditing (PCI DSS, GDPR, SOC), NIST CSF application.
-- **Learnings**: Understood the importance of layered defenses (defense in depth) and how incomplete controls lead to high risks. Gained experience in analyzing reports to identify vulnerabilities and recommend prioritized fixes. This activity highlighted the balance between security and business operations in a growing company.
-- **Challenges Overcome**: As a beginner, interpreting control categories and mapping them to the scenario was tricky, but cross-referencing documents helped build confidence in audit processes.
+To reduce risk and improve compliance, the following actions are recommended:
+- Implement **Least Privilege** and **Separation of Duties**
+- Encrypt all sensitive customer and payment data
+- Deploy an **Intrusion Detection System (IDS)**
+- Establish **disaster recovery plans** and regular **data backups**
+- Enforce stronger password policies with a **password management system**
+- Classify and inventory assets properly
+- Create a structured maintenance schedule for legacy systems
+
+---
+
+## What I Learned
+
+Through this project, I learned how to:
+- Conduct a structured internal security audit
+- Identify security risks using the NIST CSF
+- Map security controls to real-world vulnerabilities
+- Understand compliance requirements like PCI DSS and GDPR
+- Communicate security findings clearly and simply
+
+This project helped strengthen my understanding of how cybersecurity principles are applied in real business environments.
