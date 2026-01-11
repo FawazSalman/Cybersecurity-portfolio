@@ -1,4 +1,4 @@
-# Fawaz Salman — Cybersecurity Portfolio
+# Fawaz Salman - Cybersecurity Portfolio
 
 ## 👋 Introduction
 I am an aspiring cybersecurity professional seeking an entry-level or internship role where I can build practical experience and grow within the field. I am motivated by protecting people and organizations through secure systems, clear communication, and responsible security practices. I enjoy analyzing problems, collaborating with others, and continuously learning new skills.
