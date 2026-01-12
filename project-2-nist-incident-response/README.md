@@ -1,4 +1,4 @@
-# Incident Response Analysis = DoS Attack (NIST CSF)
+# Incident Response Analysis - DoS Attack (NIST CSF)
 
 ## Project Overview
 This project analyzes a **Denial-of-Service (DoS) attack** that impacted a multimedia company’s internal network. The attack caused a two-hour network outage due to a flood of ICMP packets overwhelming network resources.
