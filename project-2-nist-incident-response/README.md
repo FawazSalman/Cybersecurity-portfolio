@@ -1,87 +1,93 @@
-# Project 2: Use the NIST Cybersecurity Framework to Respond to a Security Incident
+# Incident Response Analysis = DoS Attack (NIST CSF)
 
 ## Project Overview
-This portfolio activity is from the Google Cybersecurity Professional Certificate, Course: **Connect and Protect: Networks and Network Security**.  
+This project analyzes a **Denial-of-Service (DoS) attack** that impacted a multimedia company’s internal network. The attack caused a two-hour network outage due to a flood of ICMP packets overwhelming network resources.
 
-The task was to analyze a real-world Denial of Service (DoS) incident — specifically an **ICMP flood attack** — and create an incident report using the **NIST Cybersecurity Framework (CSF)**. The NIST CSF's five core functions (Identify, Protect, Detect, Respond, Recover) guide organizations in managing cybersecurity risks proactively and reactively.
+The goal of this analysis was to evaluate the incident and create a structured security improvement plan using the **National Institute of Standards and Technology Cybersecurity Framework (NIST CSF)**.
 
-Here are the 5 core functions of the NIST CSF visualized:
+This project was completed as part of the **Google Cybersecurity Certificate**, with a focus on real-world incident response and security strategy.
 
-<grok-card data-id="200596" data-type="image_card"  data-arg-size="LARGE" ></grok-card>
+---
 
+## Security Event Summary
+The organization experienced a network outage when all internal network services became unresponsive. Investigation revealed that a malicious actor exploited an **unconfigured firewall**, sending a high volume of ICMP packets into the network.
 
+### Key details:
+- **Attack type:** Denial-of-Service (ICMP flood)
+- **Attack vector:** External network via firewall misconfiguration
+- **Impact:** Internal network unavailable for approximately two hours
+- **Affected systems:** Internal network services and resources
 
-<grok-card data-id="8a222e" data-type="image_card"  data-arg-size="LARGE" ></grok-card>
+The incident response team blocked incoming ICMP traffic, shut down non-critical services, and restored critical systems.
 
+---
 
-## Scenario Summary
-A multimedia company offering web/graphic design and social media services experienced a **DoS attack** via an **ICMP flood** (ping flood) through an unconfigured firewall.  
+## Identify (NIST CSF)
+The cybersecurity team identified the root cause of the incident as a firewall configuration weakness that allowed unrestricted ICMP traffic.
 
-This overwhelmed the network with excessive ICMP packets, causing all internal network services to become unresponsive for two hours. Normal traffic could not reach critical resources.  
+### Findings:
+- No ICMP rate limiting was configured
+- Firewall lacked source IP verification
+- Entire internal network was affected
+- Network monitoring capabilities were limited prior to the incident
 
-The incident team responded by blocking incoming ICMP, taking non-critical services offline, and restoring critical ones.  
+---
 
-Post-incident, the team implemented:
-- Rate-limiting for incoming ICMP packets
-- Source IP verification to detect spoofing
-- Network monitoring software for abnormal patterns
-- IDS/IPS to filter suspicious ICMP traffic
+## Protect (NIST CSF)
+To prevent similar incidents, the organization implemented several protective measures.
 
-The attack type: **ICMP flood DoS** (a classic volumetric attack that floods the target with ping requests to exhaust bandwidth/resources).  
+### Improvements made:
+- Firewall rules to **limit ICMP packet rates**
+- Source IP verification to detect **spoofed IP addresses**
+- Deployment of an **IDS/IPS system**
+- Review of firewall configuration standards and procedures
 
-Visual example of an ICMP flood / ping flood attack:
+These changes reduce the likelihood of future DoS attacks impacting network availability.
 
-<grok-card data-id="f32a90" data-type="image_card"  data-arg-size="LARGE" ></grok-card>
+---
 
+## Detect (NIST CSF)
+The organization improved its detection capabilities to identify abnormal traffic patterns earlier.
 
-## Incident Report Using NIST CSF
+### Detection enhancements:
+- Network monitoring software for traffic analysis
+- Firewall logging for ICMP activity
+- IDS/IPS rules to detect suspicious ICMP traffic
+- Alerts for abnormal traffic spikes
 
-### Identify
-The incident involved a malicious actor exploiting an unconfigured firewall to send a massive flood of ICMP packets, targeting the entire internal network.  
-Affected systems: Firewall, all network resources (servers, internal services, employee access).  
-Impact: Complete denial of service for 2 hours, disrupting business operations.  
-Key gaps identified: Lack of ICMP rate-limiting, no source IP verification, insufficient traffic monitoring.
+These controls help identify attacks faster and reduce response time.
 
-### Protect
-To prevent recurrence and strengthen defenses:
-- Implement strict firewall rules to limit ICMP packet rates from external sources.
-- Enable source IP address verification to block spoofed packets.
-- Deploy protective technologies like an Intrusion Prevention System (IPS).
-- Update access controls and firewall configurations.
-- Conduct employee awareness training on network security basics.
+---
 
-### Detect
-Improve monitoring to identify similar threats faster:
-- Configure network monitoring software to detect abnormal traffic spikes (e.g., sudden ICMP floods).
-- Implement an Intrusion Detection System (IDS) for signature-based and anomaly-based detection.
-- Enable firewall logging for incoming ICMP and spoofed IP attempts.
-- Set up continuous monitoring of network traffic patterns and alerts for deviations.
+## Respond (NIST CSF)
+A response plan was developed to handle future cybersecurity incidents more effectively.
 
-### Respond
-For future incidents:
-- Immediately isolate affected network segments (e.g., block offending IPs at the firewall).
-- Contain the incident by rate-limiting or dropping ICMP traffic.
-- Analyze logs (firewall, IDS, network traffic) to trace the attack source.
-- Communicate internally (notify management) and externally if required.
-- Document lessons learned and update response playbooks.
+### Response actions:
+- Isolate affected systems to limit impact
+- Block malicious traffic at the firewall
+- Prioritize restoration of critical services
+- Analyze logs to determine attack patterns
+- Report incidents to management and stakeholders
 
-### Recover
-Restore normal operations:
-- Bring critical services back online first after the flood subsides.
-- Verify system integrity and data (no data loss in this DoS case, but always check).
-- Restore non-critical services gradually.
-- Improve recovery processes: Regular backups of configurations, automated failover for critical services.
-- Conduct post-incident review to refine recovery procedures.
+---
 
-## Skills Gained & Key Learnings
-- Applied the NIST CSF to structure incident analysis and planning.
-- Understood DoS/ICMP flood mechanics and network-layer attack vectors.
-- Gained experience in recommending layered defenses (firewall rules, IDS/IPS, monitoring).
-- Improved ability to translate technical incidents into actionable security improvements.
-- Recognized the importance of proactive monitoring and quick containment in network security.
+## Recover (NIST CSF)
+Recovery efforts focused on restoring network services safely and efficiently.
 
-**Challenges**: Differentiating between detection and response actions; learned to prioritize containment first.
+### Recovery steps:
+- Restore critical network services first
+- Keep non-essential services offline until traffic stabilizes
+- Monitor network performance after restoration
+- Review and update recovery procedures based on lessons learned
 
-This activity strengthened my understanding of how network concepts (protocols like ICMP, firewalls, traffic analysis) tie directly into broader cybersecurity frameworks.
+---
 
-Feel free to explore the full NIST CSF documentation for more details!
+## What I Learned
+Through this project, I gained practical experience in:
+- Analyzing DoS attacks and their impact on networks
+- Applying the NIST CSF to real incident scenarios
+- Designing detection, response, and recovery strategies
+- Understanding how firewall misconfigurations create security risks
+- Communicating incident findings clearly and professionally
+
+This project strengthened my understanding of incident response and network security fundamentals.
