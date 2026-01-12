@@ -47,8 +47,9 @@ Each project folder includes:
 - **[Internal Security Audit & Risk Assessment (NIST CSF)](./project-1-security-audit/README.md)**  
   *Conducted an internal security audit for a fictional e-commerce company using the NIST Cybersecurity Framework, identifying key risks, control gaps, and compliance issues (PCI DSS, GDPR).*
 
-- **[Incident Response Using NIST CSF](./project-2-nist-incident-response/README.md)**  
-  *Applied the NIST Cybersecurity Framework to analyze and respond to a simulated incident.*
+- **[Incident Response Analysis – DoS Attack (NIST CSF)](./project-2-nist-incident-response/README.md)**  
+  *Analyzed a denial-of-service (DoS) attack and created an incident response and improvement plan using the NIST Cybersecurity Framework..*
+
 
 *(More projects will be added as I continue developing my skills.)*
 
