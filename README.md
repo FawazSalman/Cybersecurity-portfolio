@@ -59,7 +59,7 @@ Reviewed and modified Linux file and directory permissions using ls and chmod to
 - **[Vulnerability Assessment & Risk Analysis](./project-5-vulnerability-assessment/README.md)**
 Conducted a qualitative vulnerability assessment of a public-facing database server and proposed risk-based remediation strategies using NIST SP 800-30.
 
- **[Python Automation for Access Control](./project-5-python-allow-list-update/README.md)**
+- **[Python Automation for Access Control](./project-5-python-allow-list-update/README.md)**
 Created a Python algorithm to automate IP allow list updates and enforce secure access to restricted systems.
 
 ## 📜 Certifications & Learning
