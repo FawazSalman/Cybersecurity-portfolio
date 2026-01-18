@@ -1,7 +1,8 @@
 # Project 6: Python Algorithm to Update an IP Allow List for Access Control
 
 ## Project Overview
-As a security professional at a healthcare organization, I developed a Python algorithm to automate the secure management of an IP allow list.This portfolio activity was completed as part of the Google Cybersecurity Professional Certificate program.
+As a security professional at a healthcare organization, I developed a Python algorithm to automate the secure management of an IP allow list.This project was completed as part of the **Google Cybersecurity Certificate** program and reflects hands-on security
+
 
 The allow list (`allow_list.txt`) controls which IP addresses can access restricted content (e.g., patient records). A separate `remove_list` identifies IPs that must be revoked (e.g., former employees or compromised addresses).
 
@@ -30,7 +31,6 @@ This is best practice for resource management in file operations.
 ### 2. Read File Contents into a String
 **Goal**: Load the entire file content as a string.
 
-<!-- INSERT YOUR SCREENSHOT HERE -->
 ![Read file contents](images/Picture3.png)
 
 **Explanation**:  
@@ -48,7 +48,7 @@ Used `.split()` (default whitespace delimiter) to turn the string into a list of
 ### 4. Iterate Through Remove List
 **Goal**: Check each IP in `remove_list` against the allow list.
 
-<!-- INSERT YOUR SCREENSHOT HERE -->
+
 ![Iterate through remove_list](images/Picture5.png)
 
 **Explanation**:  
@@ -57,7 +57,6 @@ Used `.split()` (default whitespace delimiter) to turn the string into a list of
 ### 5. Remove IPs Found in Both Lists
 **Goal**: Safely remove matching IPs from allow list.
 
-<!-- INSERT YOUR SCREENSHOT HERE -->
 ![Remove matching IPs](images/Picture6.png)
 
 **Explanation**:  
@@ -67,7 +66,6 @@ Works safely here because there are no duplicate IPs in the list.
 ### 6. Update File with Revised Allow List
 **Goal**: Write updated list back to `allow_list.txt`.
 
-<!-- INSERT YOUR SCREENSHOT HERE -->
 ![Join list and write to file](images/Picture7.png)
 ![Join list and write to file](images/Picture8.png)
 
