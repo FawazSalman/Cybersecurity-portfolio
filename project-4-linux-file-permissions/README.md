@@ -1,7 +1,9 @@
 # Project 4: Managing File Permissions in Linux
 
 ## Project Overview
-As a security professional supporting a research team, I reviewed and updated file and directory permissions in the `/home/researcher2/projects` directory to ensure proper authorization and enhance system security.  
+As a security professional supporting a research team, I reviewed and updated file and directory permissions in the `/home/researcher2/projects` directory to ensure proper authorization and enhance system security.
+This project was completed as part of the **Google Cybersecurity Certificate** and focuses on practical Linux authorization and access control.
+
 
 This involved:
 - Checking current permissions (including hidden files)
@@ -84,4 +86,3 @@ I examined existing permissions using `ls -la`, interpreted the 10-character str
 
 These techniques are essential for securing Linux-based systems, managing authorization, and maintaining compliance in cybersecurity operations.
 
-Questions / feedback welcome!
