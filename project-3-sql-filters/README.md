@@ -2,12 +2,12 @@
 
 ## Project Overview
 As part of investigating potential security incidents and preparing for device updates, I queried two main tables:  
-- `log_in_attempts` — to analyze suspicious login behavior  
-- `employees` — to identify machines needing security patches  
+- `log_in_attempts` to analyze suspicious login behavior  
+- `employees` to identify machines needing security patches  
 
 I used SQL filters (AND, OR, NOT, LIKE with wildcards) to extract only the relevant records quickly and accurately.
 
-All examples below show real terminal executions — query + result — captured from the lab environment.
+All examples below show real terminal executions: query + result, captured from the lab environment.
 
 ## Investigated Security Scenarios
 
@@ -75,5 +75,3 @@ Through these targeted queries I was able to:
 - Reading and interpreting real database output in terminal
 
 These techniques are directly useful in SOC analyst, threat hunting, and log analysis roles.
-
-Questions / feedback welcome!
