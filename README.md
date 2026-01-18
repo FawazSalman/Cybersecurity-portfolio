@@ -1,37 +1,45 @@
 # Fawaz Salman - Cybersecurity Portfolio
 
 ## 👋 Introduction
-I am an aspiring cybersecurity professional seeking an entry-level or internship role where I can build practical experience and grow within the field. I am motivated by protecting people and organizations through secure systems, clear communication, and responsible security practices. I enjoy analyzing problems, collaborating with others, and continuously learning new skills.
+I am a second-year ICT student at Häme University of Applied Sciences (HAMK), Finland, actively pursuing a career in cybersecurity. My interest in cybersecurity was solidified through academic coursework and hands-on learning, including the Google Cybersecurity Certificate, where I developed a strong foundation in security principles, risk awareness, and incident analysis.
 
-This portfolio highlights my foundational cybersecurity work and applied learning through hands-on activities and documented projects.
+I am particularly drawn to the analytical and human-centered side of cybersecurity, where communication, documentation, ethical decision-making, and collaboration are just as important as technical skills. I enjoy investigating security problems, understanding how incidents occur, and learning how organizations protect sensitive data and maintain compliance.
+
+This portfolio showcases my foundational cybersecurity knowledge, practical activities, and documented projects developed through structured learning and self-driven practice.
 
 ---
 
 ## 🎯 Career Objective
-I am actively seeking a **cybersecurity internship or entry-level role** (such as Junior Cybersecurity Analyst or SOC Analyst – Trainee) where I can:
-- Apply foundational cybersecurity knowledge in real-world scenarios
-- Learn from experienced security professionals
-- Contribute positively to an organization’s security operations
+I am actively seeking a **cybersecurity internship or entry-level role** (such as Junior Cybersecurity Analyst or SOC Analyst Trainee) where I can:
+
+- Apply foundational cybersecurity concepts in real-world environments  
+- Learn from experienced security professionals and security teams  
+- Contribute to monitoring, analysis, documentation, and risk reduction efforts  
+- Continuously develop my technical and analytical skills in a professional setting  
+
+My goal is to grow into a cybersecurity analyst role through hands-on experience, structured learning, and consistent improvement.
 
 ---
 
 ## 🛠️ Technical Skills (Foundational)
 
-**Security & Analysis**
-- Security audits and risk assessment  
+### Security & Analysis
+- Security audits and basic risk assessment  
 - Incident response fundamentals  
-- Threat identification and mitigation  
-- Security frameworks (NIST CSF)
+- Threat identification and mitigation concepts  
+- Security frameworks: NIST Cybersecurity Framework (CSF)  
 
-**Systems & Networking**
-- Network security basics (TCP/IP, DNS, HTTP)
-- Linux fundamentals and command-line usage
-- Log analysis and system monitoring
+### Systems & Networking
+- Network security fundamentals (TCP/IP, DNS, HTTP)  
+- Linux fundamentals and command-line usage  
+- Log analysis and basic system monitoring  
 
-**Tools & Technologies**
-- SIEM concepts (Splunk, Google Chronicle – introductory level)
-- Wireshark (basic traffic analysis)
-- Python & SQL (basic automation and analysis)
+### Tools & Technologies
+- SIEM concepts and log analysis  
+  - Splunk (introductory)  
+  - Google Chronicle (introductory)  
+- Wireshark (basic network traffic analysis)  
+- Python and SQL (basic scripting, automation, and analysis)  
 
 ---
 
