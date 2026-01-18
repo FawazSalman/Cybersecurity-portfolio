@@ -1,4 +1,4 @@
-# Project 7: Python Algorithm to Update an IP Allow List for Access Control
+# Project 6: Python Algorithm to Update an IP Allow List for Access Control
 
 ## Project Overview
 As a security professional at a healthcare organization, I developed a Python algorithm to automate the secure management of an IP allow list.
