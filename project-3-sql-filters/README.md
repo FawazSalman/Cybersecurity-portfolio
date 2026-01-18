@@ -7,7 +7,9 @@ As part of investigating potential security incidents and preparing for device u
 
 I used SQL filters (AND, OR, NOT, LIKE with wildcards) to extract only the relevant records quickly and accurately.
 
-All examples below show real terminal executions: query + result, captured from the lab environment.
+All examples below show real terminal executions: query + result, captured from the lab environment. This project was completed as part of the **Google Cybersecurity Certificate** and focuses on applying SQL to real-world security investigations.
+
+
 
 ## Investigated Security Scenarios
 
