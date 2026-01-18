@@ -1,7 +1,7 @@
 # Project 6: Python Algorithm to Update an IP Allow List for Access Control
 
 ## Project Overview
-As a security professional at a healthcare organization, I developed a Python algorithm to automate the secure management of an IP allow list.
+As a security professional at a healthcare organization, I developed a Python algorithm to automate the secure management of an IP allow list.This portfolio activity was completed as part of the Google Cybersecurity Professional Certificate program.
 
 The allow list (`allow_list.txt`) controls which IP addresses can access restricted content (e.g., patient records). A separate `remove_list` identifies IPs that must be revoked (e.g., former employees or compromised addresses).
 
@@ -88,4 +88,3 @@ This Python script automates a critical security task: revoking IP-based access 
 
 These are foundational skills for security automation, SOAR (Security Orchestration, Automation and Response), and scripting in cybersecurity roles.
 
-Questions / feedback welcome!
