@@ -20,8 +20,8 @@ All screenshots below show real terminal output from the Python script (code + r
 ### 1. Open the Allow List File
 **Goal**: Safely open `allow_list.txt` in read mode.
 
-<!-- INSERT YOUR SCREENSHOT HERE -->
-![Open allow_list.txt file](images/step1-open-file.png)
+![Open allow_list.txt file](images/Picture1.png)
+![Open allow_list.txt file](images/Picture2.png)
 
 **Explanation**:  
 Used `with open(import_file, "r") as file:` to open the file securely (auto-closes when done).  
@@ -31,7 +31,7 @@ This is best practice for resource management in file operations.
 **Goal**: Load the entire file content as a string.
 
 <!-- INSERT YOUR SCREENSHOT HERE -->
-![Read file contents](images/step2-read-file.png)
+![Read file contents](images/Picture3.png)
 
 **Explanation**:  
 Applied `.read()` method to convert file contents to string → stored in `ip_addresses`.
@@ -40,7 +40,7 @@ Applied `.read()` method to convert file contents to string → stored in `ip_ad
 **Goal**: Split IP addresses into a list for easy manipulation.
 
 <!-- INSERT YOUR SCREENSHOT HERE -->
-![Convert string to list](images/step3-split-to-list.png)
+![Convert string to list](images/Picture4.png)
 
 **Explanation**:  
 Used `.split()` (default whitespace delimiter) to turn the string into a list of individual IP addresses.
@@ -49,7 +49,7 @@ Used `.split()` (default whitespace delimiter) to turn the string into a list of
 **Goal**: Check each IP in `remove_list` against the allow list.
 
 <!-- INSERT YOUR SCREENSHOT HERE -->
-![Iterate through remove_list](images/step4-for-loop.png)
+![Iterate through remove_list](images/Picture5.png)
 
 **Explanation**:  
 `for element in remove_list:` loop iterates over IPs to be removed.
@@ -58,7 +58,7 @@ Used `.split()` (default whitespace delimiter) to turn the string into a list of
 **Goal**: Safely remove matching IPs from allow list.
 
 <!-- INSERT YOUR SCREENSHOT HERE -->
-![Remove matching IPs](images/step5-remove-ips.png)
+![Remove matching IPs](images/Picture6.png)
 
 **Explanation**:  
 `if element in ip_addresses:` check prevents errors → then `ip_addresses.remove(element)`.  
@@ -68,7 +68,8 @@ Works safely here because there are no duplicate IPs in the list.
 **Goal**: Write updated list back to `allow_list.txt`.
 
 <!-- INSERT YOUR SCREENSHOT HERE -->
-![Join list and write to file](images/step6-join-and-write.png)
+![Join list and write to file](images/Picture7.png)
+![Join list and write to file](images/Picture8.png)
 
 **Explanation**:  
 - `.join("\n")` converts list back to string with new lines  
