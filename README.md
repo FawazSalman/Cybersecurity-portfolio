@@ -50,18 +50,25 @@ Each project folder includes:
 - **[Incident Response Analysis – DoS Attack (NIST CSF)](./project-2-nist-incident-response/README.md)**  
   *Analyzed a denial-of-service (DoS) attack and created an incident response and improvement plan using the NIST Cybersecurity Framework..*
 
+- **[Security Investigation Using SQL Filters](./project-3-sql-filters/README.md)**
+Used SQL queries with AND, OR, NOT, and LIKE filters to investigate suspicious login activity and identify affected employee machines.
 
-*(More projects will be added as I continue developing my skills.)*
+- **[Managing File Permissions in Linux](./project-4-linux-file-permissions/README.md)**
+Reviewed and modified Linux file and directory permissions using ls and chmod to enforce proper authorization and least privilege.
 
----
+- **[Vulnerability Assessment & Risk Analysis](./project-5-vulnerability-assessment/README.md)**
+Conducted a qualitative vulnerability assessment of a public-facing database server and proposed risk-based remediation strategies using NIST SP 800-30.
+
+ **[Python Automation for Access Control](./project-5-python-allow-list-update/README.md)**
+Created a Python algorithm to automate IP allow list updates and enforce secure access to restricted systems.
 
 ## 📜 Certifications & Learning
-- **Google Cybersecurity Professional Certificate** *(In Progress)*
+- **Google Cybersecurity Professional Certificate**
 
 ---
 
 ## 📫 Contact
-- **LinkedIn:** https://www.linkedin.com/in/your-username  
-- **Email:** your.email@example.com  
+- **LinkedIn:** www.linkedin.com/in/fawaz-salman
+- **Email:** fawazsalman25@gmail.com
 
 Thank you for visiting my portfolio.
