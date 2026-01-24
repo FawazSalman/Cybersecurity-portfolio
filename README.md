@@ -72,6 +72,8 @@ Created a Python algorithm to automate IP allow list updates and enforce secure 
 
 ## 📜 Certifications & Learning
 - **Google Cybersecurity Professional Certificate**
+- **CCNA: Introduction to Networks**
+- **Wireshark for Beginners: Capture Packets**
 
 ---
 
