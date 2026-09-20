@@ -1,7 +1,7 @@
 # Fawaz Salman - Cybersecurity Portfolio
 
 ## 👋 Introduction
-I am a second-year ICT student at Häme University of Applied Sciences (HAMK), Finland, actively pursuing a career in cybersecurity. My interest in cybersecurity was solidified through academic coursework and hands-on learning, including the Google Cybersecurity Certificate, where I developed a strong foundation in security principles, risk awareness, and incident analysis.
+I am a third-year ICT student at Häme University of Applied Sciences (HAMK), Finland, actively pursuing a career in cybersecurity. My interest in cybersecurity was solidified through academic coursework and hands-on learning, including the Google Cybersecurity Certificate, where I developed a strong foundation in security principles, risk awareness, and incident analysis.
 
 I am particularly drawn to the analytical and human-centered side of cybersecurity, where communication, documentation, ethical decision-making, and collaboration are just as important as technical skills. I enjoy investigating security problems, understanding how incidents occur, and learning how organizations protect sensitive data and maintain compliance.
 
