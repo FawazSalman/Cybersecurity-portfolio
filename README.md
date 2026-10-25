@@ -1,84 +1,164 @@
-# Fawaz Salman - Cybersecurity Portfolio
+# Fawaz Salman | Cybersecurity Portfolio
 
-## 👋 Introduction
-I am a third-year ICT student at Häme University of Applied Sciences (HAMK), Finland, actively pursuing a career in cybersecurity. My interest in cybersecurity was solidified through academic coursework and hands-on learning, including the Google Cybersecurity Certificate, where I developed a strong foundation in security principles, risk awareness, and incident analysis.
+## 👋 About Me
 
-I am particularly drawn to the analytical and human-centered side of cybersecurity, where communication, documentation, ethical decision-making, and collaboration are just as important as technical skills. I enjoy investigating security problems, understanding how incidents occur, and learning how organizations protect sensitive data and maintain compliance.
+I'm a third-year Bachelor of Engineering student in ICT – Robotics at Häme University of Applied Sciences (HAMK), Finland, with a growing focus on defensive cybersecurity.
 
-This portfolio showcases my foundational cybersecurity knowledge, practical activities, and documented projects developed through structured learning and self-driven practice.
+My cybersecurity journey began with the Google Cybersecurity Professional Certificate, where I developed a foundation in security operations, incident response, risk assessment, Linux security, and network defense. Since then, I've expanded into independent projects involving Python-based security automation, threat detection, log analysis, and AI-assisted security investigations.
+
+I'm particularly interested in understanding how security incidents are detected, investigated, and prevented, as well as how organizations manage access to critical systems and sensitive information.
+
+This portfolio brings together my independent cybersecurity projects, hands-on technical work, and foundational security assessments, documenting both what I've built and how I approach security problems.
 
 ---
 
 ## 🎯 Career Objective
-I am actively seeking a **cybersecurity internship or entry-level role** (such as Junior Cybersecurity Analyst or SOC Analyst Trainee) where I can:
 
-- Apply foundational cybersecurity concepts in real-world environments  
-- Learn from experienced security professionals and security teams  
-- Contribute to monitoring, analysis, documentation, and risk reduction efforts  
-- Continuously develop my technical and analytical skills in a professional setting  
+I'm seeking a **Summer 2027 cybersecurity internship**, particularly in:
 
-My goal is to grow into a cybersecurity analyst role through hands-on experience, structured learning, and consistent improvement.
+- Security Operations Center (SOC) and Security Analysis
+- Identity & Access Management (IAM)
+- Cybersecurity Operations and Incident Response
+- Vulnerability Management and Security Risk Assessment
+- Other entry-level defensive cybersecurity roles
 
----
+My goal is to contribute to a security team while developing practical experience with enterprise security tools, detection and investigation workflows, access management, and risk reduction.
 
-## 🛠️ Technical Skills (Foundational)
-
-### Security & Analysis
-- Security audits and basic risk assessment  
-- Incident response fundamentals  
-- Threat identification and mitigation concepts  
-- Security frameworks: NIST Cybersecurity Framework (CSF)  
-
-### Systems & Networking
-- Network security fundamentals (TCP/IP, DNS, HTTP)  
-- Linux fundamentals and command-line usage  
-- Log analysis and basic system monitoring  
-
-### Tools & Technologies
-- SIEM concepts and log analysis  
-  - Splunk (introductory)  
-  - Google Chronicle (introductory)  
-- Wireshark (basic network traffic analysis)  
-- Python and SQL (basic scripting, automation, and analysis)  
+I'm open to opportunities where I can combine technical problem-solving, analytical thinking, and continuous learning.
 
 ---
 
-## 📂 Portfolio Projects
-The projects below document practical cybersecurity activities I completed as part of structured learning and self-development.  
-Each project folder includes:
-- Problem overview  
-- Steps performed  
-- Tools and frameworks used  
-- Key learnings  
+## 🛠️ Technical Skills
 
-### 🔹 Projects
-- **[Internal Security Audit & Risk Assessment (NIST CSF)](./project-1-security-audit/README.md)**  
-  *Conducted an internal security audit for a fictional e-commerce company using the NIST Cybersecurity Framework, identifying key risks, control gaps, and compliance issues (PCI DSS, GDPR).*
+### Security Operations & Threat Detection
+- Security log analysis and authentication event investigation
+- Rule-based threat detection and alert correlation
+- Brute-force and password-spraying detection
+- Incident response fundamentals and investigation documentation
+- MITRE ATT&CK mapping and NIST Cybersecurity Framework (CSF)
+- SIEM fundamentals: Splunk and Google Chronicle (introductory)
 
-- **[Incident Response Analysis – DoS Attack (NIST CSF)](./project-2-nist-incident-response/README.md)**  
-  *Analyzed a denial-of-service (DoS) attack and created an incident response and improvement plan using the NIST Cybersecurity Framework..*
+### Identity, Access & System Security
+- Identity and access management (IAM) fundamentals
+- Least privilege, role-based access control (RBAC), and access reviews
+- Linux file permissions and system authorization
+- Access control automation using Python
+- Authentication security and account-related threat analysis
 
-- **[Security Investigation Using SQL Filters](./project-3-sql-filters/README.md)**
-Used SQL queries with AND, OR, NOT, and LIKE filters to investigate suspicious login activity and identify affected employee machines.
+### Risk Assessment & Security Governance
+- Security audits and control gap assessments
+- Vulnerability assessment and qualitative risk scoring
+- NIST SP 800-30 risk assessment methodology
+- PCI DSS and GDPR compliance fundamentals
+- Security remediation planning and documentation
 
-- **[Managing File Permissions in Linux](./project-4-linux-file-permissions/README.md)**
-Reviewed and modified Linux file and directory permissions using ls and chmod to enforce proper authorization and least privilege.
+### Programming, Automation & AI
+- Python for security automation, log processing, and analysis
+- SQL for security investigations and data filtering
+- AI/LLM integration for security investigation assistance
+- Evidence-grounded AI reporting and reliability evaluation
+- Automated testing and Git/GitHub version control
 
-- **[Vulnerability Assessment & Risk Analysis](./project-5-vulnerability-assessment/README.md)**
-Conducted a qualitative vulnerability assessment of a public-facing database server and proposed risk-based remediation strategies using NIST SP 800-30.
+### Systems, Networking & Tools
+- Linux and Windows fundamentals
+- TCP/IP, DNS, HTTP/HTTPS, and network security fundamentals
+- Wireshark for packet inspection
+- Streamlit for interactive security dashboards
+- OpenRouter API and LLM-assisted analysis
 
-- **[Python Automation for Access Control](./project-6-python-allow-list-update/README.md)**
-Created a Python algorithm to automate IP allow list updates and enforce secure access to restricted systems.
+---
+
+## 📂 Cybersecurity Projects
+
+My portfolio includes independent security engineering projects and practical cybersecurity assessments completed during the Google Cybersecurity Professional Certificate.
+
+### 🚀 Independent Cybersecurity Projects
+
+These projects focus on building security tools, applying defensive techniques, and testing security analysis workflows.
+
+#### 1. [SentinelAI — AI-Augmented SOC](https://github.com/FawazSalman/SentinelAI-AI-Augmented-SOC)
+
+**Python | SOC | Log Analysis | Threat Detection | MITRE ATT&CK | Streamlit | AI**
+
+Developed an AI-augmented SOC prototype combining rule-based authentication threat detection, log correlation, and LLM-assisted security investigation reporting.
+
+- Processed 10,000 OpenSSH log lines, extracting 2,755 structured authentication events.
+- Implemented detection logic for brute-force attacks, password spraying, and suspicious authentication activity.
+- Achieved 100% precision and recall across 10 labeled synthetic evaluation scenarios.
+- Built an interactive Streamlit dashboard for alert investigation, evidence inspection, and AI-assisted reporting.
+- Passed 22 automated tests and evaluated LLM-generated reports for evidence-grounding and unsupported findings.
+
+**[View Project Repository](https://github.com/FawazSalman/SentinelAI-AI-Augmented-SOC)**
+
+#### 2. [PhishLens AI — Explainable Phishing Detection & Email Investigation](https://github.com/FawazSalman/PhishLens-AI)
+
+**Python | Machine Learning | Email Security | TF-IDF | Logistic Regression | LLM | Threat Analysis**
+
+Developed a local phishing investigation application combining machine learning, rule-based security indicators, and optional LLM-assisted evidence analysis.
+
+- Built a phishing classifier using TF-IDF and logistic regression, achieving **99.47% F1 on 8,103 held-out samples** and **66.64% F1 on 5,684 external samples**, identifying limitations in cross-dataset generalization.
+- Implemented email header, URL, attachment metadata, and MIME analysis to identify suspicious indicators without executing potentially malicious content.
+- Integrated optional local LLM-assisted evidence prioritization, keeping detection scores independent of AI-generated output.
+- Developed a local investigation dashboard supporting `.eml` analysis, explainable detection results, SHA-256 evidence hashes, and JSON/text report exports.
+- Validated functionality through automated tests and evaluated detection behavior using 12 synthetic AI-generated challenge emails.
+
+**[View Project Repository](https://github.com/FawazSalman/PhishLens-AI)**
+
+### 🔐 Google Cybersecurity Certificate Projects
+
+The following projects demonstrate foundational security skills through simulated business scenarios, technical exercises, and documented security assessments.
+
+#### 3. [Internal Security Audit & Risk Assessment](./project-1-security-audit/README.md)
+
+**NIST CSF | Security Auditing | GRC | PCI DSS | GDPR**
+
+Conducted a simulated internal security audit of an e-commerce business, identifying control deficiencies, compliance gaps, and a high overall risk rating of 8/10. Evaluated access controls, encryption, disaster recovery, and security monitoring, proposing risk-based remediation measures.
+
+#### 4. [Incident Response Analysis — DoS Attack](./project-2-nist-incident-response/README.md)
+
+**NIST CSF | Incident Response | Network Security | IDS/IPS**
+
+Analyzed a simulated ICMP flood attack that caused approximately two hours of network downtime. Identified firewall configuration weaknesses and developed detection, mitigation, response, and recovery recommendations using the NIST CSF.
+
+#### 5. [Security Investigation Using SQL Filters](./project-3-sql-filters/README.md)
+
+**SQL | Security Investigation | Database Queries**
+
+Used SQL queries with `AND`, `OR`, `NOT`, and `LIKE` operators to investigate suspicious login activity, filter security records, and identify employee machines requiring attention.
+
+#### 6. [Managing File Permissions in Linux](./project-4-linux-file-permissions/README.md)
+
+**Linux | chmod | Access Control | Least Privilege**
+
+Audited Linux file and directory permissions using `ls -la` and applied targeted `chmod` commands to remove unauthorized write access, secure archived files, and restrict directory access. Verified the resulting permissions through terminal inspection.
+
+#### 7. [Vulnerability Assessment & Risk Analysis](./project-5-vulnerability-assessment/README.md)
+
+**NIST SP 800-30 | Risk Assessment | Vulnerability Management**
+
+Assessed security risks associated with a publicly accessible database server, evaluating three threat scenarios with risk scores of 9, 6, and 3. Recommended RBAC, MFA, TLS encryption, IP allow-listing, and defense-in-depth controls.
+
+#### 8. [Python Automation for Access Control](./project-6-python-allow-list-update/README.md)
+
+**Python | Security Automation | Access Management**
+
+Developed a Python algorithm to automate IP allow-list maintenance, removing unauthorized addresses from approved access records to support consistent access control enforcement.
+
+---
 
 ## 📜 Certifications & Learning
+
 - **Google Cybersecurity Professional Certificate**
-- **CCNA: Introduction to Networks (via Hamk)**
+- **CCNA: Introduction to Networks** — HAMK / Cisco
 - **Wireshark for Beginners: Capture Packets**
 
 ---
 
-## 📫 Contact
-- **LinkedIn:** www.linkedin.com/in/fawaz-salman
-- **Email:** fawazsalman25@gmail.com
+## 📫 Connect With Me
 
-Thank you for visiting my portfolio.
+- **LinkedIn:** [linkedin.com/in/fawaz-salman](https://www.linkedin.com/in/fawaz-salman)
+- **Email:** [fawazsalman25@gmail.com](mailto:fawazsalman25@gmail.com)
+
+I'm interested in connecting with cybersecurity professionals, learning from security teams, and exploring Summer 2027 internship opportunities.
+
+Thank you for visiting my portfolio!
